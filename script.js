@@ -89,9 +89,9 @@ function updateValues() {
       .filter((value) => value < 0)
       .reduce((accumulator, value) => (accumulator += value), 0) * -1
   ).toFixed(2);
-  balance.innerText = `$${total}`;
-  moneyPlus.innerText = `$${income}`;
-  moneyMinus.innerText = `$${expense}`;
+  balance.innerText = `₹${total}`;
+  moneyPlus.innerText = `₹${income}`;
+  moneyMinus.innerText = `₹${expense}`;
 }
 
 function removeTransaction(id) {
